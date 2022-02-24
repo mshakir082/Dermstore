@@ -1,5 +1,5 @@
 #uperDiv {
-    width: 1420.7px;
+    width: 1403.7px;
     height: 31.91px;
     /* border: 1px solid red; */
     background-color: #f2f2f2;
@@ -8,12 +8,16 @@
 }
 
 #mainNavDiv {
-    width: 1420.7px;
+    width: 1403.7px;
     height: 144.94px;
     /* border: 1px solid red; */
     margin-left: -10px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+     /* overflow: hidden;
+    position: sticky;
+    top: 1px; */
 }
+
 
 #logoDiv {
     width: 262.62px;
@@ -80,26 +84,27 @@ input.nosubmit {
     }
     #nameNav
     {
-       width: 1368px;
+        width: 1403.7px;
         height: 21.99px;
-        margin-left: 23px;
-        display: grid;
-        grid-template-columns: repeat(14,1fr);
+        display: flex;
+        margin-left: 1px;
+     
         /* border: 1px solid teal; */
        
     }
     #nameNav>div{
        text-align: center;
+       font-size: 15px;
+       margin-left: 31px;
     }
     #responsSlider
     {
-        width: 1420.7px;
+        width: 1403.7px;
         height: 55.198px;
         margin-left: -10px;
         display: flex;
         justify-content: center;
         background-color:#f2f2f2;
-      
     }
     #responsSlider>div
     {
@@ -129,7 +134,7 @@ input.nosubmit {
     }
     #EarnDiv
     {
-        width: 1420.7px;
+        width: 1403.7px;
         height: 55.198px;
         margin-left: -10px;
         display: flex;
@@ -142,4 +147,5 @@ input.nosubmit {
        {
             margin: auto;
        }
+      
     

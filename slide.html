@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="slide.css">
+</head>
+<style>
+    #mainBox {
+        border: 1px solid red;
+        width: 100%;
+        height: 599.99px;
+        display: flex;
+        position: relative;
+
+    }
+
+    #box1 {
+        border: 1px solid green;
+        width: 274.99px;
+        height: 575.99px;
+        margin: 10px;
+    }
+
+    .imgTag {
+        border: 1px solid green;
+        width: 274.99px;
+        height: 274.99 px;
+    }
+
+    .productBlockDiv {
+        margin-top: -10px;
+        text-align: center;
+        font-size: 15px;
+    }
+    .productBlock_price
+    {
+      margin-top: 10px;
+    }
+    .productBlock_button>button{
+        width: 274.99px;
+        height: 39.98px;
+        padding: 9.6px 32px;
+        background-color: #222222;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: sans-serif;
+    }
+    .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 1px;
+  background-color:white;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid;
+  transition: background-color 0.1s ease;
+  
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+img{
+    aspect-ratio: auto 600 / 600;;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .8}
+  to {opacity: 1}
+}
+
+</style>
+
+<body>
+    <div id="mainBox">
+        <div id="box1">
+            <img class="imgTag"
+                src="https://static.thcdn.com/images/small/webp//productimg/original/11289090-1064877008419300.jpg"
+                alt="">
+
+            <div class="productBlockDiv">
+                <h4 class="productBlock_productName">
+                    PCA SKIN Vitamin B3 Brightening Serum (1 fl. oz.)
+                </h4>
+
+                <!-- <span class="productBlock_ratingStars"> -->
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="80" height="16" viewBox="0 0 84 16">
+
+                        <linearGradient id="grad-12132656-95.39999999999999" x1="0" x2="100%" y1="0" y2="0">
+                            <stop class="productBlock_ratingStars-fill" offset="95.39999999999999%"></stop>
+                            <stop class="productBlock_ratingStars-background" offset="4.6000000000000085%"></stop>
+                        </linearGradient>
+                        <path fill="url(#grad-12132656-95.39999999999999)"
+                            d="M8 12.5 3.004 16 4.403 10 0 6 5.777 5.44 8 0 10.223 5.44 16 6 11.597 10 12.996 16 M25 12.5 20.004 16 21.403 10 17 6 22.777 5.44 25 0 27.223 5.44 33 6 28.597 10 29.996 16 M42 12.5 37.004 16 38.403 10 34 6 39.777 5.44 42 0 44.223 5.44 50 6 45.597 10 46.996 16 M59 12.5 54.004 16 55.403 10 51 6 56.777 5.44 59 0 61.223 5.44 67 6 62.597 10 63.996 16 M76 12.5 71.004 16 72.403 10 68 6 73.777 5.44 76 0 78.223 5.44 84 6 79.597 10 80.996 16">
+                        </path>
+                    </svg>
+                </span>
+               <span class="productBlock_reviewCount" aria-hidden="true">30</span>
+               <div class="productBlock_price">
+               <span class="productBlock_priceValue  " content="$120.00">$120.00</span>
+              </div>
+             </div>
+             <div class="productBlock_button">
+                    <button > QUICY BUY</button>
+            </div>
+        </div>
+
+        <div id="box1" class="box2">
+            <img class="imgTag"
+                src="https://static.thcdn.com/images/small/webp//productimg/original/11289090-1064877008419300.jpg"
+                alt="">
+
+            <div class="productBlockDiv">
+                <h4 class="productBlock_productName">
+                    PCA SKIN Vitamin B3 Brightening Serum (1 fl. oz.)
+                </h4>
+
+                <!-- <span class="productBlock_ratingStars"> -->
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="80" height="16" viewBox="0 0 84 16">
+
+                        <linearGradient id="grad-12132656-95.39999999999999" x1="0" x2="100%" y1="0" y2="0">
+                            <stop class="productBlock_ratingStars-fill" offset="95.39999999999999%"></stop>
+                            <stop class="productBlock_ratingStars-background" offset="4.6000000000000085%"></stop>
+                        </linearGradient>
+                        <path fill="url(#grad-12132656-95.39999999999999)"
+                            d="M8 12.5 3.004 16 4.403 10 0 6 5.777 5.44 8 0 10.223 5.44 16 6 11.597 10 12.996 16 M25 12.5 20.004 16 21.403 10 17 6 22.777 5.44 25 0 27.223 5.44 33 6 28.597 10 29.996 16 M42 12.5 37.004 16 38.403 10 34 6 39.777 5.44 42 0 44.223 5.44 50 6 45.597 10 46.996 16 M59 12.5 54.004 16 55.403 10 51 6 56.777 5.44 59 0 61.223 5.44 67 6 62.597 10 63.996 16 M76 12.5 71.004 16 72.403 10 68 6 73.777 5.44 76 0 78.223 5.44 84 6 79.597 10 80.996 16">
+                        </path>
+                    </svg>
+                </span>
+               <span class="productBlock_reviewCount" aria-hidden="true">30</span>
+               <div class="productBlock_price">
+               <span class="productBlock_priceValue  " content="$120.00">$120.00</span>
+              </div>
+             </div>
+             <div class="productBlock_button">
+                    <button > QUICY BUY</button>
+            </div>
+        </div>
+        <div id="box1" class="box3">
+            <img class="imgTag"
+                src="https://static.thcdn.com/images/small/webp//productimg/original/11289090-1064877008419300.jpg"
+                alt="">
+
+            <div class="productBlockDiv">
+                <h4 class="productBlock_productName">
+                    PCA SKIN Vitamin B3 Brightening Serum (1 fl. oz.)
+                </h4>
+
+                <!-- <span class="productBlock_ratingStars"> -->
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="80" height="16" viewBox="0 0 84 16">
+
+                        <linearGradient id="grad-12132656-95.39999999999999" x1="0" x2="100%" y1="0" y2="0">
+                            <stop class="productBlock_ratingStars-fill" offset="95.39999999999999%"></stop>
+                            <stop class="productBlock_ratingStars-background" offset="4.6000000000000085%"></stop>
+                        </linearGradient>
+                        <path fill="url(#grad-12132656-95.39999999999999)"
+                            d="M8 12.5 3.004 16 4.403 10 0 6 5.777 5.44 8 0 10.223 5.44 16 6 11.597 10 12.996 16 M25 12.5 20.004 16 21.403 10 17 6 22.777 5.44 25 0 27.223 5.44 33 6 28.597 10 29.996 16 M42 12.5 37.004 16 38.403 10 34 6 39.777 5.44 42 0 44.223 5.44 50 6 45.597 10 46.996 16 M59 12.5 54.004 16 55.403 10 51 6 56.777 5.44 59 0 61.223 5.44 67 6 62.597 10 63.996 16 M76 12.5 71.004 16 72.403 10 68 6 73.777 5.44 76 0 78.223 5.44 84 6 79.597 10 80.996 16">
+                        </path>
+                    </svg>
+                </span>
+               <span class="productBlock_reviewCount" aria-hidden="true">30</span>
+               <div class="productBlock_price">
+               <span class="productBlock_priceValue  " content="$120.00">$120.00</span>
+              </div>
+             </div>
+             <div class="productBlock_button">
+                    <button > QUICY BUY</button>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- The dots/circles -->
+  <div style="text-align:center;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</body>
+
+</html>
+<script>
