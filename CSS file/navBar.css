@@ -19,11 +19,16 @@
   } */
 /* 4 div in navbar logo OR SEARCH AND ACCOUNT */
 #mainNavDiv {
+    /* border: 1px solid red; */
     width: 1403.7px;
     height: 144.94px;
-    /* border: 1px solid red; */
-    margin-left: -10px;
+     margin-left: -10px;
+    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    /* position: sticky;
+    top: 0%; */
+    padding: 1.25rem;
+    padding-bottom: 1rem;
    
 }
 
@@ -82,7 +87,7 @@ input.nosubmit {
        background-color: #000000;     
        font-family: sans-serif;   
        
-    }
+   }
     .h3Card{
         margin-top: -35px; 
         margin-left: 17px; 
@@ -234,7 +239,7 @@ input.nosubmit {
            grid-template-rows: auto    ;
        }
        .mainDiv{
-           border: 1px solid green;
+           /* border: 1px solid green; */
            width: 274.99px;
            height: 500.98px;
            margin: auto;

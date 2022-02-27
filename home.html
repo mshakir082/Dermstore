@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+
    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
@@ -14,14 +14,15 @@
     integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/088bab0eb4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="navBar.css">
-    <link rel="stylesheet" href="slide.css">
-    <link rel="stylesheet" href="video.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./CSS file/navBar.css">
+    <link rel="stylesheet" href="./CSS file/slide.css">
+    <link rel="stylesheet" href="./CSS file/video.css">
+    <link rel="stylesheet" href="./CSS file/footer.css">
+    <link rel="stylesheet" href="./CSS file/hairNavHover.css">
 </head>
 <style>
     #bodercheck {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         display: flex;
     }
 
@@ -68,7 +69,7 @@
 
                     </a>
                 </div>
-                <p>Account</p>
+                <p id="login">Account </p>
             </div>
             <div id="cardDiv" style="display: flex;">
                 <div class="cardNav" style="padding: 10px 5px 0px 38px; padding-top: 40px;">
@@ -80,9 +81,9 @@
                                 transform="translate(-1293 -76) translate(1293 76)"></path>
                         </svg>
                     </a>
-                    <h3 class="h3Card">0</h3>
+                    <h3 id="totalItem" class="h3Card">0</h3>
                 </div>
-                <p>Card</p>
+                <p id="card">Card</p>
             </div>
         </div>
 
@@ -90,11 +91,31 @@
             <div>Brands</div>
             <div> Browse By</div>
             <div>Bestsellers</div>
-            <div>Skin Care</div>
+            <div id="skincarepage">Skin Care</div>
             <div>Makeup</div>
-            <div>Hair Care</div>
+            <div id="haircarepage">
+                <nav>
+                    <div class="wrapper">
+                     <ul class="nav-links">
+                         <li>
+                          <a  href="#1" class="desktop-item" title="Live Score" id="stickyNav">Hair Care</a>
+                        
+                          <ul class="drop-menu">
+                            <li><a href="shampo.html">Shampoo</a></li>
+                            <li><a href="dryShampo.html">Dry Shampoo</a></li>
+                            <li><a href="conditioner.html">Conditioner</a></li>
+                            <li><a href="#4">Coarse</a></li>
+                            <li><a href="#5">Color-Treated</a></li>
+                            <li><a href="#6">ghd</a></li>
+                            <li><a href="#6">R+Co</a></li>
+                          </ul>
+                        </li>
+                       </ul>
+                    </div>
+                  </nav>
+            </div>
             <div>Bath & body</div>
-            <div>Men</div>
+            <div id="mencarepage">Men</div>
             <div>Tools&Devices</div>
             <div> Gifts & Sets</div>
             <div>BeautyFix</div>
@@ -159,7 +180,7 @@
     <div id="EarnDiv">
         <b id="earnBtag">Earn 3x points on PCA Skin. Limited time PCA Skin gift with any $150+ purchase.Ends 2/24.</b>
     </div>
-    <!-- Slideshow container -->
+    <!-- Slideshow container image slide -->
     <div class="slideshow-container">
 
         <!-- Full-width images with number and caption text -->
@@ -198,15 +219,11 @@
         <p>Rewards members earn triple on their pro solutions. Limited time PCA Skin gift with any $150+ purchase. Ends
             2/24</p>
     </div>
-    <div id="product" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'></div>
-    <!-- <div id="promoProductMain">
-        <div id="imageDiv">
-            <img style="width: 100%;" src="https://static.thcdn.com/images/medium/webp/widgets/208-us/13/original-PCA-Skin-3X-PTS-034613.jpg" alt="">
-        </div>
-        <div id="productDiv">
-            <div class="box1 fade">
+
+    <div id="mainBox1">
+        <div class="box2 fade">
             <img class="imgTag"
-                src="https://static.thcdn.com/images/small/webp//productimg/original/11289090-1064877008419300.jpg"
+                src="https://static.thcdn.com/images/small/webp//productimg/original/12901140-9424904191542093.jpg"
                 alt="">
 
             <div class="productBlockDiv">
@@ -215,7 +232,7 @@
                 </h4>
 
                 <!-- <span class="productBlock_ratingStars"> -->
-    <!-- <span><svg xmlns="http://www.w3.org/2000/svg" width="80" height="16" viewBox="0 0 84 16">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="80" height="16" viewBox="0 0 84 16">
 
                         <linearGradient id="grad-12132656-95.39999999999999" x1="0" x2="100%" y1="0" y2="0">
                             <stop class="productBlock_ratingStars-fill" offset="95.39999999999999%"></stop>
@@ -236,7 +253,39 @@
             </div>
         </div>
 
-        <div class="box1 fade" class="box2">
+        <div class="box2 " >
+            <img class="imgTag"
+                src="https://static.thcdn.com/images/xsmall/webp//productimg/1600/1600/11907698-1474870996253889.jpg"
+                alt="">
+
+            <div class="productBlockDiv">
+                <h4 class="productBlock_productName">
+                    PCA SKIN Vitamin B3 Brightening Serum (1 fl. oz.)
+                </h4>
+
+                <!-- <span class="productBlock_ratingStars"> -->
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="80" height="16" viewBox="0 0 84 16">
+
+                        <linearGradient id="grad-12132656-95.39999999999999" x1="0" x2="100%" y1="0" y2="0">
+                            <stop class="productBlock_ratingStars-fill" offset="95.39999999999999%"></stop>
+                            <stop class="productBlock_ratingStars-background" offset="4.6000000000000085%"></stop>
+                        </linearGradient>
+                        <path fill="url(#grad-12132656-95.39999999999999)"
+                            d="M8 12.5 3.004 16 4.403 10 0 6 5.777 5.44 8 0 10.223 5.44 16 6 11.597 10 12.996 16 M25 12.5 20.004 16 21.403 10 17 6 22.777 5.44 25 0 27.223 5.44 33 6 28.597 10 29.996 16 M42 12.5 37.004 16 38.403 10 34 6 39.777 5.44 42 0 44.223 5.44 50 6 45.597 10 46.996 16 M59 12.5 54.004 16 55.403 10 51 6 56.777 5.44 59 0 61.223 5.44 67 6 62.597 10 63.996 16 M76 12.5 71.004 16 72.403 10 68 6 73.777 5.44 76 0 78.223 5.44 84 6 79.597 10 80.996 16">
+                        </path>
+                    </svg>
+                </span>
+               <span class="productBlock_reviewCount" aria-hidden="true">30</span>
+               <div class="productBlock_price">
+               <span class="productBlock_priceValue  " content="$120.00">$120.00</span>
+              </div>
+             </div>
+             <div class="productBlock_button">
+                    <button > QUICY BUY</button>
+            </div>
+        </div>
+        
+        <div class="box2 fade" >
             <img class="imgTag"
                 src="https://static.thcdn.com/images/small/webp//productimg/original/11379886-6964864781429289.jpg"
                 alt="">
@@ -247,7 +296,7 @@
                 </h4>
 
                 <!-- <span class="productBlock_ratingStars"> -->
-    <!-- <span><svg xmlns="http://www.w3.org/2000/svg" width="80" height="16" viewBox="0 0 84 16">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="80" height="16" viewBox="0 0 84 16">
 
                         <linearGradient id="grad-12132656-95.39999999999999" x1="0" x2="100%" y1="0" y2="0">
                             <stop class="productBlock_ratingStars-fill" offset="95.39999999999999%"></stop>
@@ -260,23 +309,94 @@
                 </span>
                <span class="productBlock_reviewCount" aria-hidden="true">30</span>
                <div class="productBlock_price">
-               <span class="productBlock_priceValue  " content="$120.00">$120.00</span>
+               <span class="productBlock_priceValue  " content="$120.00">$90.00</span>
               </div>
              </div>
              <div class="productBlock_button">
                     <button > QUICY BUY</button>
             </div>
-           </div>
-       </div> -->
+        </div>
+        
+        <div class="box2 fade" >
+            <img class="imgTag"
+                src="https://static.thcdn.com/images/small/webp//productimg/original/12902575-1284866433782963.jpg"
+                alt="">
 
-    <!-- <div id="bodercheck">
-        <div></div>
-        <div></div>
-        <div></div>
-        </div> -->
+            <div class="productBlockDiv">
+                <h4 class="productBlock_productName">
+                    PCA SKIN Vitamin B3 Brightening Serum (1 fl. oz.)
+                </h4>
+
+                <!-- <span class="productBlock_ratingStars"> -->
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="80" height="16" viewBox="0 0 84 16">
+
+                        <linearGradient id="grad-12132656-95.39999999999999" x1="0" x2="100%" y1="0" y2="0">
+                            <stop class="productBlock_ratingStars-fill" offset="95.39999999999999%"></stop>
+                            <stop class="productBlock_ratingStars-background" offset="4.6000000000000085%"></stop>
+                        </linearGradient>
+                        <path fill="url(#grad-12132656-95.39999999999999)"
+                            d="M8 12.5 3.004 16 4.403 10 0 6 5.777 5.44 8 0 10.223 5.44 16 6 11.597 10 12.996 16 M25 12.5 20.004 16 21.403 10 17 6 22.777 5.44 25 0 27.223 5.44 33 6 28.597 10 29.996 16 M42 12.5 37.004 16 38.403 10 34 6 39.777 5.44 42 0 44.223 5.44 50 6 45.597 10 46.996 16 M59 12.5 54.004 16 55.403 10 51 6 56.777 5.44 59 0 61.223 5.44 67 6 62.597 10 63.996 16 M76 12.5 71.004 16 72.403 10 68 6 73.777 5.44 76 0 78.223 5.44 84 6 79.597 10 80.996 16">
+                        </path>
+                    </svg>
+                </span>
+               <span class="productBlock_reviewCount" aria-hidden="true">30</span>
+               <div class="productBlock_price">
+               <span class="productBlock_priceValue  " content="$120.00">$70.00</span>
+              </div>
+             </div>
+             <div class="productBlock_button">
+                    <button > QUICY BUY</button>
+            </div>
+        </div>
+        
+        <div class="box2 fade">
+            <img class="imgTag"
+                src="https://static.thcdn.com/images/small/webp//productimg/original/13126467-4774880813872914.jpg"
+                alt="">
+
+            <div class="productBlockDiv">
+                <h4 class="productBlock_productName">
+                    PCA SKIN Vitamin B3 Brightening Serum (1 fl. oz.)
+                </h4>
+
+                <!-- <span class="productBlock_ratingStars"> -->
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="80" height="16" viewBox="0 0 84 16">
+
+                        <linearGradient id="grad-12132656-95.39999999999999" x1="0" x2="100%" y1="0" y2="0">
+                            <stop class="productBlock_ratingStars-fill" offset="95.39999999999999%"></stop>
+                            <stop class="productBlock_ratingStars-background" offset="4.6000000000000085%"></stop>
+                        </linearGradient>
+                        <path fill="url(#grad-12132656-95.39999999999999)"
+                            d="M8 12.5 3.004 16 4.403 10 0 6 5.777 5.44 8 0 10.223 5.44 16 6 11.597 10 12.996 16 M25 12.5 20.004 16 21.403 10 17 6 22.777 5.44 25 0 27.223 5.44 33 6 28.597 10 29.996 16 M42 12.5 37.004 16 38.403 10 34 6 39.777 5.44 42 0 44.223 5.44 50 6 45.597 10 46.996 16 M59 12.5 54.004 16 55.403 10 51 6 56.777 5.44 59 0 61.223 5.44 67 6 62.597 10 63.996 16 M76 12.5 71.004 16 72.403 10 68 6 73.777 5.44 76 0 78.223 5.44 84 6 79.597 10 80.996 16">
+                        </path>
+                    </svg>
+                </span>
+               <span class="productBlock_reviewCount" aria-hidden="true">30</span>
+               <div class="productBlock_price">
+               <span class="productBlock_priceValue  " content="$120.00">$100.00</span>
+              </div>
+             </div>
+             <div class="productBlock_button">
+                    <button > QUICY BUY</button>
+            </div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- The dots/circles -->
+  <div style="text-align:center; margin-top: 20px;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
 
 
-    <div id="meetGHt">
+
+
+    <div id="meetGHt" style="margin-top: 60px;">
         <div>
             <img style="width: 100%; align-items: center;"
                 src="https://static.thcdn.com/images/small/webp/widgets/208-us/02/SAVE-_SQR-040202.jpg" alt="">
@@ -501,8 +621,8 @@
         
 </body>
 </html>
-<script src="slide.js"></script>
-<script src="product.js"></script>
-<script>
+<script src="./Js file/slide.js"></script>
+<script src="./Js file/product1.js"></script>
+<script src="./Js file/path.js"></script>
 
-</script>
+
